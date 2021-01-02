@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eğitim devam 2 </title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="helo"></p>
+    <button type="button" id="btn" onclick="myFunction()"  >Keep Try</button>
+    <p><input type="text" id="first"></p>
+    <p><input type="text" id="second"></p>
+    <p id="third"></p>
+    <p id="selam"></p>
+    <p id="sevas"></p>
+    <p id="hi"></p>
+    <p id="merhaba"></p>
+    <p id="what"></p>
+    <p id="sowat"></p>
+    <script>
+        /*
+        // obje yartama this devam
+        var person =  {
+            id : 1234,
+            firstName : "faruk",
+            lastName : "türkoğlu",
+            myFunction1 : function(){
+                return this ;
+            }
+        };
+        document.getElementById("demo").innerHTML = person.myFunction1() ;
+        // burada olanlar  3 değişken tanımladı 1. değişkenin verileri 2. de tanımlandı 
+        //3 değişkende bunda call() değeri ile çağırıldı.
+        var person1 = {
+            ffName1 : function() {
+                return this.ffName + " " + this.lsName ; 
+                
+            }
+        }
+        var person2 = {
+            ffName : "hebele",
+            lsName : "hübele",
+
+        }
+        var x = person1.ffName1.call(person2);
+        document.getElementById("first").innerHTML = x ; 
+
+        // global değişkenlere örnekler
+        var carName = "Mercedes";
+        myfunction2() ; 
+
+        function myfunction2() {
+            document.getElementById("helo").innerHTML = "I can display " + carName ; 
+        }
+        */ // burası üsttü yorum satırı
+        // dışarıda ki fonksiton objeleri "myfunction()" undefined olarak nitelendirilir
+        /*
+        myfunction3();
+        function myfunction3(){
+            var car = "Volvo";
+            document.getElementById("first").innerHTML = typeof car + "burada string " +  car;  
+        }
+        */
+        /*
+        document.getElementById("second").innerHTML = typeof car ; 
+        */
+        //  blok element var her yerden erişilebilir
+        // let ve const blok olduğu için erişilemez 
+        //  { var x = 3} burada var'a erişilebilinir
+        // {let x = 3} x'e erişilenemez
+        /*
+        var x = 4;
+        {
+            var x = 2 ; // şu an x = 2 çıkacaktır 
+        }
+        */
+        /*
+        // hata 
+        var x = 10;
+        { let x = 2 } ; // burada x = 10 çıkar çünkü blok içi let kullanımı seçeneği değiştirmez
+        document.getElementById("third").innerHTML = x ;
+        */
+        // var i ile döngüde kullanmak 
+        /*
+        var i = 5 ; 
+        for (var i = 0 ; i < 10; i++ ){ // burada cevap 9 olur
+            document.getElementById("selam").innerHTML = i ; 
+        } 
+        */
+        // let i döngüde kullanmak
+        /*
+        let i = 4;
+        for (let i = 0; i < 11; i++ ) { // burada cevap 4 olur 
+
+        }
+        document.getElementById("sevas").innerHTML = i ;
+        
+        try{
+            const PI = 3.131592653589793;
+            PI = 3.14 ; 
+            // type error  görev constant da değişmez type eror hatası
+        }
+        catch(err) {
+            document.getElementById("sowat").innerHTML = err ;
+        }
+        */
+        /*
+        // sabit bir nesne bildirmek nesnelerin özelliklerini değiştir
+        // hale GETİRMEZ
+
+        const car = {type : "Volvo", model:"S90", color:"black" };
+        car.color = "GoldenYellow" ;  // değişiklik yapılabilir
+        car.owner = "Turkoglu" ; // içerik ekleme yapılabilir
+        document.getElementById("what").innerHTML = "Car owner is " + car.owner + " " + car.type; 
+        */
+        /*
+        const cars = ["Volvo", "SAAB", "BMW", "MERCEDES"]; 
+        cars[ 0 ] = "TOYOTO" ; //eleman değişikliği 
+        cars.push = ("AUDİ"); // eleman ekleme 
+        */
+        // değeri gösterme
+        //document.getElementById("merhaba").innerHTML = cars ;      
+        // sabit bir dize yeniden tanımlanamaz 
+        // const cars = ["Volvo", "SAAB", "BMW", "MERCEDES"];
+        // cars = ["Volvo", "SAAB", "BMW", "MERCEDES"];
+        /*
+        carNAme = "Volvo yes its mine" ; 
+        document.getElementById("hi").innerHTML = carNAme ; 
+        var carNAme ; // let ve const kullanımı burada hata verecekti hoisting işlemi sonradan bildime 
+        // gerçekeştirelemez 
+
+        // ok işlevi sözdizimi kullanılmadan bir işlevin sözdizimini
+        // gösterir
+        */
+        /*
+        var merhaba ;
+
+        merhaba = function(){
+            return "hello world"
+        }
+        document.getElementById("demo").innerHTML = merhaba() ;
+        */
+
+        // arrow function => kullanımı
+        /*
+        var hello;
+        hello = () => {
+            return "Hello World" ; 
+        }
+        document.getElementById("demo").innerHTML = hello() ; 
+        */
+        /*
+        var hello ;
+        hello = (val) => "hello " + val ; 
+
+        document.getElementById("demo").innerHTML = hello("universe") 
+        */
+        // Normal kullanım Hali
+        /*
+        var hello;
+        hello =  function() {
+            document.getElementById("demo").innerHTML += this ;
+
+        }
+        // ekran objesi fonkiyonu çağırabilir
+        window.addEventListener("load", hello);
+        // buton obje çağırma fonksiyonu
+        document.getElementById("btn").addEventListener("click", hello);
+        */
+
+        // ok işlevi işlevin sahibini temsil eder YANİ this i 
+
+        hello = () => {
+            document.getElementById("demo").innerHTML += this;
+
+        }
+        /*
+        //to window obje çağırması
+        window.addEventListener("load", hello) ; 
+        // buton ile obje çağırma
+        document.getElementById("btn").addEventListener("click", hello);
+        */
+        
+        //class Sınıf sözdizimi
+        //her zaman constructor yöntem eklemek gerek
+        // örnek class ClassName{constructor(){...}} bu şekilde kullanılır
+
+        // araba sınıfı oluşturma
+        // sınıfın iki başlangıç özelliği "ad" ev "yıl"
+        /*
+        class Car {
+            constructor(name, year) {
+                this.name = name ; 
+                this.year = year ;
+            }
+        }
+        */
+        // use to javascript class 
+        /*
+        class Cars {
+            constructor(name, year){
+                this.name = name ;
+                this.year = year ; 
+            }
+        }
+        // burada iki değişken kullanmak yerine sınıf oluşturmak
+        myCar = new Cars("ford" ,2014);
+        document.getElementById("demo").innerHTML = 
+        myCar.name + " " + myCar.year;
+        */
+        // yapıcı yöntemi kurucu ismine sahip olması gerekiyor
+        //yeni bir nesne oluşturduğunda otomatik olarak yürütülür
+        // nesne özelliklerini başlatmak için kullanır
+
+        // örnek aşağıda
+        // class da constructor() kullanılır
+
+        /*
+        class truck{
+            constructor(name, year){
+                this.name = name ; 
+                this.year = year ;
+            }
+            age(){
+                let date = new Date() ; 
+                return date.getFullYear() - this.year;
+            }
+
+        }
+        let myCar = new truck("Audi", 2009) ; 
+        document.getElementById("demo").innerHTML = 
+        "My car is " + myCar.age() + " years old." ;
+        */
+
+        // sınıf yöntemine paremetreler gönderebilirsiniz
+        /*
+        function myFunction() {
+            var vize, final, mesaj,avaraj;
+            vize = Number(document.getElementById("first").value);
+            final = Number(document.getElementById("second").value);
+            avaraj = vize * 0.3 + final * 0.7;
+
+                if(isNaN(vize)){
+                    mesaj = "vize notunu sayısal bir değer giriniz";
+                }
+                else if(isNaN(final)){
+                    mesaj = "final notunu sayısal bir değer giriniz";
+                }
+                else{
+                    if(avaraj>=60){
+                       mesaj = "dersi geçtiniz";
+                    }
+                    else{
+                        mesaj = "dersten kaldınız";
+                    }
+                }
+                document.getElementById("helo").innerHTML = mesaj;
+        }
+        */
+        var numbers1 = [45,2,534,3,2,12,];
+        var numbers2 = numbers1.map(show);
+
+        document.getElementById("sevas").innerHTML = numbers2 ;
+
+        function show(value,index,array) {
+            return value * 2 ; 
+        }
+
+        // burada arrayimizdeki sayıları çarpmaya olanak sağlar
+        
+        /*
+        var person = {
+            firstName  : "faruk",
+            lastName : "turkoglu ",
+            age : "25",
+        }
+        document.getElementById("demo").innerHTML = person.firstName + " " + person.age;
+        */
+
+        //obje
+        /*
+        var person =  {
+            fName:"faruk",
+            hi:"hello",
+            naber:"iyidir",
+            fullName : function() { 
+                return this.fName + " " + this.naber;
+            }
+         }; // obje yi this ile çalıştırma
+         document.getElementById("demo").innerHTML = person.fullName();
+         */
+
+         // nesne yi bir döngü biçiminde görüntüleme
+         /*
+         var x,txt = "";
+         var person = {name:"hasan",age:30,surname:"turkoglu",city:'canada'};
+         var y = txt.toUpperCase() 
+         for(x in person) { 
+             txt += person[x] + " " ;
+        
+         };
+        */         
+         /*
+         document.getElementById("what").innerHTML = txt;
+
+         var person1 =  {name:"hasan",age:30,surname:"turkoglu",city:'canada'};
+         // burada nesneyi arraye çevirebiliriz 
+         var myArray = Object.values(person);
+         document.getElementById("sowat").innerHTML = myArray;
+
+         // aynı işlem JSON DERSİ DE OLUŞABİLİR
+         */
+         /*
+         var person2 = {name:"hasan",age:30,surname:"turkoglu",city:'canada', today:new Date()};
+         var myString = JSON.stringify(person2);
+         // JSON fonksiyon kabul etmez 
+         document.getElementById("sowat").innerHTML = myString;
+         */
+         // getter anahtar kelime kullanımı (kullanılacak değerler lang, get , language )
+         // dil özellğini değerli almak için  lang özelliği kullanılır
+         // create oject 
+         /*
+         var person = {
+             name:"faruk",
+             surName:"turkoglu",
+             language: "tr",
+             get lang(){
+                 return this.language;
+             } 
+         };
+         // display data 
+         document.getElementById("sowat").innerHTML = person.lang ;
+         */
+         
+    </script>
+    
+</body>
+</html>

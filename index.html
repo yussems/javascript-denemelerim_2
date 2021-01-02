@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>try do something</h1>
+    <input id="age" value="18" >
+    <button type="button" onclick="myFunction()"  id="den" >click me</button>
+    <button onclick="this.style.display = 'none' " >beni yok ett</button>
+    <p id="demo"></p>
+    <p id="helo"></p>
+    <p id="first"></p>
+    <p id="second"></p>
+    <p id="third" ></p>
+    
+    
+    
+   
+    <script>
+       /* var str = "please locate  'try' occurs!"; 
+        var pos = str.lastIndexOf("try");
+        document.getElementById("demo").innerHTML = pos; */
+
+      /*  var str = "please locate where 'locate' occurs!";
+        var pos = str.search("locate");
+        document.getElementById("demo").innerHTML = pos ; */
+
+        /*var str = "watermelon, banana, kiwi";
+        var res = str.slice(10,17);
+        document.getElementById("demo").innerHTML= 
+        res ;*/
+        
+        /*var str = "muz, kivi, çilek";
+        var pos = str.slice(4);
+        document.getElementById("demo").innerHTML = 
+        pos; */
+
+        /*var str = "apple, banana, kiwi"; 
+        var res = str.substring(5,13); 
+        document.getElementById("demo").innerHTML = 
+        res; */
+
+       /* function myFunction() {
+            var str = 
+            document.getElementById("demo").innerHTML;
+            var txt = 
+            str.replace(/microsoft/i, "GePri");
+            document.getElementById("demo").innerHTML = txt ;
+            
+        }
+        */
+
+       /* function myFunction(){
+            var text = 
+            document.getElementById("demo").innerHTML;
+
+            document.getElementById("demo").innerHTML = 
+            text.toUpperCase();
+        }*/
+
+       /* var text1 = "hello world"; 
+        var text2 = "come on"; 
+        var text3 = text1.concat(" ",  text2) ;
+        document.getElementById("demo").innerHTML = 
+        text3 ;
+        */
+
+        /*function myFunction() {
+            var str = "         Hello World         " ;
+            alert(str.trim());
+
+        }
+        */
+
+       /* var str =  "hello world"
+        document.getElementById("demo").innerHTML = str.charAt(1); */
+
+       /* var x = "100" ;
+        var y = "10" ; 
+        var z = x *y ;
+        document.getElementById("demo").innerHTML = z ; */
+
+        // aşağıda ki string methoda örnek string sayıları dizeye(stringe çevirir)
+        /*var x = 123 ; 
+        document.getElementById("demo").innerHTML = 
+        x.toString() + "<br>" + 
+        (123).toString() + "<br>" +
+        (100+ 23).toString() ; */
+
+       /* var x = 9.324 ;
+        document.getElementById("demo").innerHTML =
+        x.toExponential() + "<br>" + 
+        x.toExponential(2) + "<br>" + 
+        x.toExponential(4) + "<br>" +
+        x.toExponential(6) + "<br>" +
+        x.toExponential(8) ; 
+        */
+
+        /*var x = 123 ;
+        document.getElementById("demo").innerHTML = 
+        x.valueOf() + "<br>" + 
+        (123).valueOf() + "<br>" +
+        (100+23).valueOf() +"<br>" + 
+        (100 +133 + 10).valueOf() + "<br>" +
+        (123 + 23 + 34 + 45 + 12+ 424 ).valueOf(); 
+        */
+
+        //javascript global methods number()
+        // parseInt(), parseFloat bunlar değişkenleri sayılara çevirirler.
+        // örnek number()
+        
+        /*document.getElementById("demo").innerHTML = 
+        Number(true) + "<br>" +
+        Number(false) + "<br>" + 
+        Number("10") + "<br>" + 
+        Number("10.33") + "<br>" +
+        Number("10,33") + "<br>" + 
+        Number("100 333") + "<br>" +
+        Number( "john " ) + "<br>" +
+        Number(new Date('30-09-1995'));
+        */
+        /*var x = new Date("1995-09-30");
+        document.getElementById("helo").innerHTML = Number(x)
+        console.log(x);
+        */
+        
+        /*document.getElementById("demo").innerHTML = 
+        parseInt("100") + "<br>" +
+        parseInt("10. 33") + "<br>" +
+        parseInt("100 333") + "<br>" +
+        parseInt("100, 333") + "<br>" +
+        parseInt("100 year"); 
+        */
+
+        //objet örnek
+        /*var person = {firstName:"faruk", lastName:"türkoğlu", } 
+        document.getElementById("demo").innerHTML =
+        person["firstName"] +" " + person["lastName"];
+        */
+        // son array elemanına erişmek için
+        /*
+        var fruits = ["banana", "apple", "kiwi", "orange", "mango"];
+        var last = fruits[fruits.length - 1];
+        document.getElementById("demo").innerHTML = 
+        last;
+        */
+        // for döngüsüne örenek loop: döngü 
+        
+        /*var fruits, text, flen, i;
+         fruits = ["banana","apple","kiwi","orange","mango" ];
+         flen = fruits.length;
+        text = "<ul>";
+        for(i = 0; i < flen; i++ ) {
+        text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>"
+        document.getElementById("demo").innerHTML = text;
+
+        */
+           /* var fruits, text, fLen, i;
+            fruits = ["Banana", "Orange", "Apple", "Mango"];
+            fLen = fruits.length;
+
+            text = "<ul>";
+            for (i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+            }
+            text += "</ul>";
+
+            
+            document.getElementById("helo").innerHTML = text;
+            */
+            /*var meyve = ["banana", "apple", "mango" ];
+            meyve.push("lemon");
+            document.getElementById("helo").innerHTML = meyve;
+            */
+            /*var meyve = ["apple", "lemon", "kiwi"];
+            document.getElementById("helo").innerHTML = meyve;
+
+            function myFunction() {
+                meyve.push("bedeve");
+                document.getElementById("helo").innerHTML = meyve;
+            }
+            */
+
+           /* var person = [];
+            person[0]= "faruk";
+            person[1]= "türkoğlu";
+            person[2]= "hayalet ";
+            person[3]= "god" ;
+            document.getElementById("helo").innerHTML = 
+            person[0] + " " + person[3] + " " + person.length;
+            */
+           /* var meyve = ["banana", "apple", "mango"];
+            document.getElementById("helo").innerHTML = 
+            meyve.join(" * "); 
+            meyve.push("kek");
+            document.getElementById("helo").innerHTML = 
+            meyve;
+            */
+
+           /* var meyve = ["banana", "capture", "adjective", "kelops" ];
+            document.getElementById("first").innerHTML = meyve ;
+
+            document.getElementById("second").innerHTML = meyve.shift() ; 
+
+            document.getElementById("third").innerHTML = meyve ;   
+            function myFunction(){
+                meyve.unshift("hadi");
+                document.getElementById("third").innerHTML = 
+                meyve ; 
+            }   
+            console.log("meyve") */
+           /* var meyve = ["muz", "silah", "at", "avrat"];
+            document.getElementById("first").innerHTML = meyve ;
+
+            function myFunction() {
+                meyve[meyve.length] = "ben";
+                document.getElementById("first").innerHTML = meyve ;
+
+            }
+            */
+            // we can use sort() alfabetik sıra , reserve() dizeyi tersine çevirme
+            /*
+            var x = ["faruk", "belkız", "nurhayat", "ata", "hüseyin" ]
+            document.getElementById("helo").innerHTML = x
+
+            function myFunction(){
+                x.sort();
+                x.reverse();
+                document.getElementById("helo").innerHTML = x;
+            }
+            */
+            // sort() ile yapılacak sayı stringleri yanlış sonuç verecektir.
+            // karşılaştırma işlevi ile  bu sorun çözülebilir hale gelecektir
+            // örneği aşağıdaki gibidir
+           /* var y = ["1", "22", "342", "666", "31", "12", "28" ]
+            document.getElementById("helo").innerHTML = y;
+            function myFunction() {
+                y.sort(function(a, b){return a - b });
+                document.getElementById("helo").innerHTML = y ; 
+            }
+            */
+            // örnek iki
+            /*
+            var x = ["1","2","7","234","12", "24","77"]; 
+            document.getElementById("helo").innerHTML = x;
+            function myFunction1() {
+                x.sort();
+                document.getElementById("helo").innerHTML = x;
+
+            } 
+            function myFunction2() {
+                x.sort(function(a,b){return a-b});
+                document.getElementById("helo").innerHTML = x;
+            }
+            */
+
+            // bir dizeyi rastgele sıraya alma aşağıdaki gibidir ama bu örnek doğru değildir.
+           /*
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("helo").innerHTML = points;  
+
+            function myFunction() {
+                points.sort(function(a, b){return 0.5 - Math.random()});
+                document.getElementById("helo").innerHTML = points;
+                    }        
+
+                    */
+            // yeni örnek sıraya alma konusunda daha doğru işlem yapacaktır
+            // yöntem adı fisher yates yöntemi
+
+            /*
+            var x = ["1", "2" , "55", "44", "73","22","23","91" ];
+            document.getElementById("helo").innerHTML = x;
+
+            function myFunction() {
+                var i, j, k;
+                for(i = x.length -1 ; i > 0 ; i-- ){
+                    j = Math.floor(Math.random() * i )
+                    k = x[i]
+                    x[i] = x[j] 
+                    x[j] = k
+                }
+                document.getElementById("helo").innerHTML  = x ;
+            }
+            */
+
+            // azalan numara bulma (a-b) - en yüksek değeri bulma (b-a)
+            /*
+            var points = ["11","5", "23","1","234","93"]
+            points.sort(function(a,b){return b-a}) ; 
+            document.getElementById("helo").innerHTML ="en düşük değer" + " " + points[0]  ;*/
+
+
+            // en yüksek sayıyı bulma math.max ile Math.min ile en düşük bulunur
+            /*
+            var points = ["11","5", "23","1","234","93"];
+            document.getElementById("helo").innerHTML = myArrayMin(points);
+
+            function myArrayMin(arr) {
+                return Math.min.apply(null,arr);
+                
+            }
+            */
+            // array javascript sort()
+            // araba nesnelerini yaşa göre sıralamak için aşağıdaki işlem uygulanabilir
+            /*
+            var cars = [
+                {type:"Volvo" , year:2016},
+                {type:"Mercedes" , year:2012},
+                {type:"Bmw" , year:2001},
+                {type:"Saab" , year:2000},
+            ];
+            displayCars();
+            function myFunction() {
+                cars.sort(function(a, b){return a.year - b.year});
+                displayCars();
+            }
+
+            function displayCars() {
+                document.getElementById("helo").innerHTML = 
+                cars[0].type + " " + cars[0].year + "<br>" +
+                cars[1].type + " " + cars[1].year + "<br>" +
+                cars[2].type + " " + cars[2].year + "<br>" +
+                cars[3].type + " " + cars[3].year;
+            }
+            */
+            // comparing karşılaştırma işlemi daha karmaşık olabilir 
+            // şua an için anlamadığım veriler işlenmekte burada array farklı yazıldı 
+            // ikinci değişken dahil oldu  function içinde array kullanıldı
+           /*
+            var cars = [
+                {type: "volvo",  year: 1600},
+                {type: "bmw",  year: 2003},
+                {type: "saab",  year: 2005},
+                {type: "audi",  year: 2200}
+            ]
+
+            displayCars() ;
+
+            function myFunction() {
+                cars.sort(function(a, b){
+                    var x = a.type.toLowerCase();
+                    var y = b.type.toLowerCase();
+                    if (x < y) {return -1;}
+                    if (x > y) {return 1;}
+                    return 0 ;
+                });
+                displayCars();
+            }
+
+            function displayCars() {
+                document.getElementById("demo").innerHTML = 
+                cars[0].type + " " + cars[0].year + "<br>" +
+                cars[1].type + " " + cars[1].year + "<br>" +
+                cars[2].type + " " + cars[2].year + "<br>" +
+                cars[3].type + " " + cars[3].year;
+            }
+            */
+            /*
+            var txt = "2"; // örnek olarak burası boş olursa sadece txt(değişken) + value( burada numbers)
+            var numbers = [45,23,1,5,73,77,23];
+            numbers.forEach(myFunction);
+            document.getElementById("demo").innerHTML = txt ;
+            function myFunction(value, index, array) {
+                txt = txt + value +"<br>" ;
+            }
+            console.log(txt)
+            */
+            /*
+            var txt = "" ;
+            var numbers = [4,5,2,1,5,44,5,55,62,62];
+            numbers.forEach(myFunction);
+            document.getElementById("helo").innerHTML = txt ; 
+
+            function myFunction(value) {
+               txt =  txt + value + "<br>" ; 
+            } 
+            */
+            /* array.map() methoda örnek
+            var number1  = [45,2,3,9,3,11,32,512 ];
+            var number2 = number1.map(myFunction);
+            document.getElementById("demo").innerHTML = number2;
+
+            function myFunction(value, index, array) {
+                return value * 2 ;
+            }
+            */
+            // array.filter() methodu örnek 18 den büyük değere sahip öğeleri yeni birr dizi oluşturur.
+
+            /*
+            var numbers = [34,1,1,2,4,5,6,78,34,63,11]; 
+            var over18 = numbers.filter(myFunction);
+            document.getElementById("demo").innerHTML = over18;
+
+            function myFunction (value, index, array) {
+
+                return value < 18 ;
+            }
+            */
+
+            // array.reduce() kaldık
+            /*
+            var numbers1 = [45,34,23,13,243,56] ;
+            var sum = numbers1.reduce(myFunction) ;
+            document.getElementById("demo").innerHTML = "the sum is " + sum ;
+
+            function myFunction(total, value, index, array) {
+                return total + value ;
+            }
+            */
+           // reduce just use total and value actualy use 4 argument value index array total 
+            /*
+           var numbers2 = [45,22,34,56,32,]; 
+            var sum = numbers2.reduce(myFunction)  ; 
+            document.getElementById("helo").innerHTML = "new sums is " + sum ;
+
+            function myFunction(total, value) {
+                return total + value ; 
+
+            }
+            console.log(sum)
+            */
+            // burada number 18 üzeri sayıları veriyorsa true eğer az ise false  kulllanılan değer every()
+            /*
+            var number =  [19,21,22,52,53 ] ; 
+            var allOver18 = number.every(myFunction) ; 
+            document.getElementById("demo").innerHTML = 
+            allOver18;
+
+            function myFunction (value, index, array) {
+                return value > 18 ;
+            }
+            */
+            
+            // use some() kullanıcaz every() benzer bir test kullanılamayı sağlar.every gibi hepsinin değil. yalnızca bazı sayılar 
+            // geçerliyse some() kullanılabilir 
+            /*
+            var belkız = [34,22,1,3,13] ; 
+            var someover18 = belkız.some(myFunction) ; 
+            document.getElementById("demo").innerHTML = someover18 ; 
+
+            function myFunction(value, index, array) {
+                return value > 18 
+            }
+            */
+           // indexof() internet explorer desteklemez. kod içerisinde nerede olduğunu bulmana yardımcı olur
+            /*
+           var fruits = ["apple", "banana", "kiwi", ] ; 
+           var x = fruits.indexOf("kiwi") ; 
+           document.getElementById("demo").innerHTML = "kiwi is found is position " + x ;
+            // lastIndexOf ile indexOf aynıdır.
+            */
+
+            //find() yöntem bir  test işlevi geçerse  birinci dizi öğesinin değerini verir.
+            // aşağıdaki örnekte 18 den büyük olan ilk öğeyi bulur.
+
+
+            // findIndex() 18 den büyük olan sayının ilkgörüldüğü yeri verir.
+
+            /*
+            var numbers = [4,9,5,16,19] ; 
+            var first = numbers.findIndex(myFunction) ; 
+            document.getElementById("demo").innerHTML = "i can find 18 < number " + first ; 
+
+            function myFunction(value, index, array) {
+                return value > 18 ;
+            }
+            */
+
+
+           // ********************* yeni konu  tarih nesnesi  ile çalışma ****************
+           // new Date()
+            /*
+           var d  = new Date() ; 
+           document.getElementById("helo").innerHTML = d ;
+           */
+            // yeni bir gün (date) oluşturmanın 4 yolu vardır.
+            //new Date()
+            //new Date(year, month, day, hours, minutes,seconds, milliseconds)
+            //new Date(miliseconds)
+            //new Date(date stirings)
+            /* yöntem 1 
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d ;
+            */
+            /*
+            var d = new Date(2018,11,10,33,30,0) ; 
+            document.getElementById("demo").innerHTML = d ; 
+            */
+           // 6 numbers specify year, month, day, hour, minute, second:
+           /*
+            var d = new Date(2018,11,24,10,33,30);
+            document.getElementById("demo").innerHTML = d;
+            */
+
+           // 2 eleman kullanarak
+           /*
+           var d = new Date(2020,12);
+           document.getElementById("demo").innerHTML = d  ; 
+           */
+
+          // geçmişe yönelik tarih 
+          /*
+          var d = new Date(99,11,24);
+          document.getElementById("demo").innerHTML = d ; 
+          */
+          // new date(datestring)
+          /*
+          var d = new Date("October 13, 2014,11:13:00") ; 
+          document.getElementById("demo").innerHTML = d ; 
+          */
+
+          // date(0) milissaniye cinsinden ilk kullanıldığı tarihi verir 1970 
+          /*
+          var d  = new Date(0) ; 
+          document.getElementById("demo").innerHTML = d ;
+          */
+          // 24 saat kaç milisaniyedir 
+          // 86,400,000
+
+          //  toString yöntemi
+          /*
+          var d = new Date() ;
+          document.getElementById("demo").innerHTML = d.toString() ;
+
+          console.log(d);
+          var c = new Date()  ;
+          document.getElementById("helo").innerHTML = c ;
+          console.log(c);
+          */
+          // The toUTCString() method converts a date to a UTC string (a date display standard): d.toUTCstring() tarih görün
+          // standardına çevirir
+          // toDateString yöntem daha okunabilir bir biçimde tarih dönüştürü
+          // toISOString iso standardına göre çevirir
+
+
+          /*
+          Type	Example
+            ISO Date	"2015-03-25" (The International Standard) new Date("2015-03-25") , örn: ("2015-03"), örn: ("2015")
+            Short Date	"03/25/2015"
+            Long Date	"Mar 25 2015" or "25 Mar 2015"
+          */
+          /*
+          var bd = new Date("2015-03-25T12:00:00Z");
+          document.getElementById("first").innerHTML = bd ;
+          console.log(bd) ;
+          */
+            /*
+          document.getElementById("second").innerHTML =
+          new Date("2015-03-25T12:00-06:00");
+          // bazı tarihler başında 0 olamazsa bazı tarayıcılarda problem olabilir.
+          */
+          // milisaniye sayısını döndürür
+            // Date.parse("March 21, 2012") bu şekilde yazılır milisaniye olarak dönderir
+            /*
+          var msec = Date.parse("September 30, 1995") ; 
+          document.getElementById("demo").innerHTML = msec ; 
+          console.log(msec);
+          // milisaniye dönüştürmek için kullanabilirsiniz
+            */
+            /*
+        var msec = Date.parse("September 30, 1995") ; 
+        var d  = new Date(msec) ; 
+        document.getElementById("demo").innerHTML = d ; 
+            */
+            /*
+        var d = new Date() ; // milisaniye dönderirir .getTime()yöntemi
+        document.getElementById("first").innerHTML = d.getTime() ;
+        */
+        /*
+        var d = new Date() ;
+        document.getElementById("first").innerHTML = d.getFullYear() ; 
+        */
+            /*
+        var d = new Date()  ; // ay içerisinde doğru ayı bulabilmek için + 1 eklenmeli
+        document.getElementById("first").innerHTML = d.getMonth() + 1 ; 
+            */
+            /*
+        var d  = new Date() ; 
+        var months = ["January","February","March","April","May","June","July","August",
+        "September","October","November","Decembe"] ;
+        document.getElementById("first").innerHTML = months[d.getMonth()];   
+            */
+        // getHours, getMonth,getSeconds, getMinutes, getHours,getDate yöntemleri
+        // getMilliseconds, getDay,(haftanın ilk günü getDay ile pazar görünür)
+        /*
+        var d = new Date() ; 
+        document.getElementById("first").innerHTML  = d.getHours() ;
+        */
+        /*
+        var d = new Date() ; 
+        var days = [
+            "Sunday", "Monday", "Tuesday", "Wendesday", "Thursday",
+            "Friday", "Saturday"
+        ];
+        document.getElementById("first").innerHTML =days[d.getDay()];
+        */
+        //tarih yöntemi ayarlama yöntemleri
+        //setDate(), setFullYear(), setHours(), setMilliseconds(),
+        // setMinutes, setMonth(), setSeconds(), setTime()
+        /*
+        var d = new Date() ; 
+        d.setFullYear(2019, 11, 3  ); 
+        document.getElementById("first").innerHTML = d ;
+        */
+        /*
+        *******************************içiçe veri kullanma
+        var d = new Date() ;  // iç içe kullanma 
+        d.setDate(d.getDate() + 1 ) ; 
+        document.getElementById("first").innerHTML = d ;
+        */
+        // tarihler kolaylıkla karşılaştırabilir
+           //  ****************************** yıl karşılaştırması
+        /*   
+        var today, someday, text ; 
+        today = new Date() ;
+        someday = new Date()  ;
+        someday.setFullYear(2099,0,14)  ;
+        if (someday > today) {
+            text = "today is before January 14, 2100. " ;
+        } else {
+            text  = "today is after January 14, 2100. " ;
+        }
+        document.getElementById("first").innerHTML = text ;
+        */
+        //  ************************************----------------javascrip --MATH-- 
+        //   document.getElementById("first").innerHTML = Math.round(6.4);
+        // document.getElementById("second").innerHTML = Math.pow(9,2);
+        // document.getElementById("helo").innerHTML = Math.sqrt(144);
+        // document.getElementById("helo").innerHTML  = Math.abs(-6) ; 
+        // document.getElementById("helo").innerHTML = Math.ceil(4.1)
+        // document.getElementById("helo").innerHTML = Math.floor(4.9) ;
+        //document.getElementById("demo").innerHTML = Math.min(0,6,8,99,-9,88,-78,-91) 
+        //document.getElementById("demo").innerHTML = Math.max(0,6,8,99,-9,88,-78,-91) 
+        // document.getElementById("demo").innerHTML = Math.random();
+        // aşağıdaki 0 ile 9 arasında rastgele bir tamsayı döndürür
+        // document.getElementById("first").innerHTML = Math.floor(Math.random() * 10 );
+        //document.getElementById("demo").innerHTML = Math.floor(Math.random() * 100);
+        // 1 ile 10 arasında sayıyı döndürmek için aşağıdaki işlem 
+        //document.getElementById("second").innerHTML = Math.floor(Math.random() * 10) + 1 ;
+
+        // math ı function ile kullanmaa
+        // getRndInteger(min, max) 
+      //  *********************** aşağıdaki önemli çünkü function ile math birleştiren yapıya sahip***************************
+      /*
+        console.log("first")
+        function myFunction() {
+            document.getElementById("first").innerHTML = getRndInteger(1,10)
+        }
+         function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) ) + min ;
+        }
+        */
+        /*
+        function myFunction() {                                             // 10 > 9
+            document.getElementById("demo").innerHTML = 10 > 11  ; // burada boolean demeden ve parantez açmadanay nı değer elde edilir
+        }
+        */
+        /*
+        function myFunction() {
+            var x = 0 ; 
+            document.getElementById("demo").innerHTML = Boolean(x) ;  // 0'ın boolean değeri
+        }
+        */
+        //  ************************************** inceleme obje ile boolean mı
+        /*
+        var x = false ; //x is a boolean ******************
+        var y = new Boolean(false) ; // y is an object
+        document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y ;
+        */
+        //*********************************************do not create boolean object
+        // aşağıdaki örnek gibi kullanmamak gerek
+
+        /*
+        var x = false ; // x is a boolean
+        var y = new Boolean(false) ; // y is an object 
+        document.getElementById("demo").innerHTML = (x==y); // normal olması gereken false 
+        */
+
+        //koşullu üçlü operatör
+        /*
+        function myFunction() {
+            var age, voteable;
+            age = document.getElementById("age").value;
+            voteable = (age < 18) ? "too yooung" : "Old enough" ;
+            document.getElementById("demo").innerHTML = voteable + " to vote." ; 
+        }
+        */
+
+        // ****************************************---------if, else, if else, switch********************************************
+      /*  if (new Date().getHours() < 21) {
+            document.getElementById("demo").innerHTML = "good fucking day!"
+        }
+        */
+        // if else örnek saat 18 den azsa bir iyi günler selamı oluştur ve aksi takdirde iyi akşamlar
+         /*
+        function myFunction() {
+        var  hour= new Date().getHours() ; 
+        var greeting ;  
+            if (hour < 21) {
+                greeting = "Good day" ; 
+
+            } else {
+                greeting = "Good evening" ; 
+            }
+            document.getElementById("demo").innerHTML = greeting;
+        }
+        */
+        /*
+        function myFunction() {
+            var greeting ; 
+            var time = new Date().getHours() ;
+
+            if ( time < 10 ) {
+                greeting = "good Morning" ; 
+            } else if (time < 21) {
+                greeting = "good day" ; 
+            } else {
+                greeting = "good evening" ;
+            }       
+            document.getElementById("demo").innerHTML = greeting ; 
+        }
+        */
+        /*
+        var day;
+        switch (new Date().getDay()) {
+          case 0:
+            day = "sunday" ;
+            break;
+          case 1:
+            day = "monday" ;
+            break;
+          case 2:
+            day = "tuesday" ;
+            break;
+          case 3:
+            day = "wendesday" ;
+            break;
+          case 4:
+            day = "thursday" ;
+            break;
+          case 5:
+            day = "friday" ;
+            break;
+          case 6:
+            day = "Saturday" ;
+            break;
+            
+
+        }
+        */
+        //document.getElementById("demo").innerHTML = "Today is " + day ; 
+        // burada her değer için atanan değişken var eğer atanmayan değer için hiç bir eşleşme yoksa ---default-----
+        /*
+        var text; 
+        switch (new Date().getDay()) {
+            default:
+            text = "looking forward to the weekend" ; 
+            break; 
+          case 6:
+             text = "today is saturday"
+            break; 
+        
+          case 0:
+             text = "today is saturday"
+            
+        }
+        document.getElementById("demo").innerHTML = text ; 
+        */
+
+        //-------------------------------------- loops ---------------------------------
+
+        //aynı kodu her seferinde farklı değerde tekrar tekrar çalıştımak istersen döngüleri kullan
+       /* text += cars[0] + "<br>";
+        text += cars[1] + "<br>";
+        text += cars[3] + "<br>";
+        text += cars[2] + "<br>";
+        text += cars[4] + "<br>";
+        text += cars[5] + "<br>";
+        text += cars[2] + "<br>"; // YERİNE AŞAĞIDAKİ GİBİ BİR KOD KULLANILIR
+        */ /*
+        var i;
+        for (i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>"; // BURADA Kİ BİR LOOP DÖNGÜSÜDÜR 
+        }
+        */
+        /*
+        var cars = ["BMW", "SAAB", "VOLVO", "FORD", "FİAT",] ; // bu array
+        var text = "" ; // bu variable 
+        var i; // for döngüsü için oliuturulan değer
+        for (i = 0 ; i < cars.length ; i++ ) { // burada i ye döngüsü verildi i eşittir 0, i küçüktür arabaların değer uzunluğundan, i artarak devam eder
+            text += cars[i] + "<br>" ;  // burada text değeri arabaların  arrayine pozitif eşittir
+        }
+        document.getElementById("demo").innerHTML = text ; 
+         console.log(text)
+         console.log(i)
+        */
+
+        // farklı döngü türleri
+         /*
+        for : bir kod bloğu boyunca b bir kaç kez döngü yapar
+        -for/in : bir nesnenin özellikleri boyunca ilerler
+        - for/of : yinelenebilir ir nesnenin değerleri arasında döngüler
+        - while : belirli bir koşul doğruyken bir kod bloğu boyunca döngü yapar
+        - do/while : Ayrıca  belirli bir koşul doğruyken bir kod bloğu boyunca döngü yapar  
+         */
+         /*
+         var text = "" ; 
+         var i;
+         for ( i = 0; i < 5; i++ ) {
+             text += "the number is " + i + "<br>" ; 
+         }
+         document.getElementById("demo").innerHTML = text ; 
+
+         var cars = ["hello", "sevas", "ich","ben", "sie"] ; 
+         var i, len, text ;
+         for ( i = 0, len = cars.length, text = "" ; i < len ; i++ ) {
+             text += cars[i] + "<br>" ; 
+         }
+         document.getElementById("helo").innerHTML = text ;
+         */
+         // 2 değerden başlayarak  yazmaya başladı 
+         /*
+         var selam = ["hi","hello", "sevas", "merhaba"] ; 
+         var i = 2 ;
+         var len = selam.length ; 
+         var text = "" ;
+
+         for ( ;i < len; i++ ){
+             text += selam[i] + "<br>" ;
+         }
+         document.getElementById("first").innerHTML = text ;
+         console.log(text)
+         */
+         /*
+         var selam= ["hello", "sevas","hi", "game"];
+         var i =0;
+         var len =selam.length;
+         var text = "" ; 
+
+         for (;i < len; ) {
+             text += selam[i] + "<br>" ; i++   ;
+         }
+         console.log(text);
+         document.getElementById("demo").innerHTML = text ; 
+         // -- değer kullanamak yerine göre siteyi çökertebilir
+         */
+
+         // javascript for/in ifadesi bir nesnenin özellikleri arasında dolaşır
+         // for/in örnek 
+         /*
+         var text = "" ; 
+         var person = {fname:"Mehmet", lname:"Turkoglu", age:25};
+         var x ; 
+         for (x in person ) {
+             text += person[x] + " ";
+
+         }
+         document.getElementById("demo").innerHTML = text ; 
+         */
+
+        // for/of bir dize üzerinde döngü
+        /*
+        var cars = ["BMW","VOLVO","SAAB"];
+        var x ; 
+
+        for (x of cars) {
+            document.write(x + "<br>") ;
+        }
+        console.log(x);
+
+        var txt = "JavaScript" ; 
+        var x ; 
+
+        for(x of txt){
+
+            document.write(x + "<br>");
+        }
+        */
+        // while döngü uzunluğunda belirli bir koşul doğru olarak kod bloğu döngüsü
+
+        // while (condition--durum--)
+
+        // aşağıdaki örnekte i değişkeni 10 dan küçük olduğu sürece döngüdeki kod tekrar çalşacaktır
+        /*
+        var text = "" ; 
+        var i = 0 ;
+        while (i <  10  ) {
+        text += "<br> The Number is " + i ;
+        i++; // koşulda kullanılan değişkeni artırmayı unutursak döngü asla bitmez ve bu tarayıcıyı çökerteceketir
+        }
+        document.getElementById("first").innerHTML = text ;
+        */ 
+        // do/while wow döngü sırasısına döngünün bir çeşididir. bu döngü, koşulun doğru olup olmadığını kontrol etmeden önce kod bloğunu
+        // bir kek çalıştırcak  ardından koşul doğru ise döngüyü tekrarlayacak
+        // koşul yanlış olsa bile döngü her zaman en az bir kere yürütülecektir koşul test edilmeden yürütülür
+        /*
+        var text = " " ; 
+        var i = 0 ;
+        
+        do {
+            text += "<br> The Number is " + i ; 
+            i++;
+        }
+        while(i<10);
+
+        document.getElementById("second").innerHTML = text ;
+        */
+        // break ifadesi döngüden atlar
+        // continue deyimi döngü içinde yinelenir "üstünden atlar"
+        /* atamada verilen değerden sonrasını saymaz 
+        var text = "" ; 
+        var i ; 
+        for ( i=0; i<10; i++ ) {
+            if(i === 3 ) { break; }
+            text += "The number is " + i + "<br>";
+        }
+         
+        document.getElementById("third").innerHTML = text ;
+        */
+       //continue örneği aşağıda 
+       // değer atamasında verilen i atlar 
+        /*
+       var text = " " ;
+       var i ;
+       for (i = 0; i < 10 ; i++) {
+           if(i===3) { continue; } 
+           text += "the number is 3 yok  " + i + "<br>"
+       }
+       document.getElementById("demo").innerHTML = text ; 
+       */
+       //javascriptte  ifadelerini etiketlemek için ifadelerin önüne : iki nokta üst üste koyun
+
+       // javascript tür dönüşümü
+        // number() bir numbera  -- stringi bir stringe booleanı bir booleana dönüştürme
+       /*
+        document.getElementById("helo").innerHTML = 
+        typeof "john" + "<br>" +
+        typeof 3.14 + "<br>" +
+        typeof NaN + "<br>" +
+        typeof false + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof {name:'john', age:34} + "<br>" +
+        typeof new Date() + "<br>" +
+        typeof function () {} + "<br>" +
+        typeof myCar + "<br>" +
+        typeof null;
+        */
+       /*
+        console.log( 1 | 2 ) ;  // or
+        console.log( 1 & 2 ) ; // and
+
+       const readPermission = 4 ;
+       const writePermission = 2 ; 
+       const executePermission = 1 ;
+
+
+       let myPermission = 0 ;
+       myPermission = myPermission | readPermission | writePermission ; 
+
+       let message = (myPermission & readPermission) ? "yes": 'no' ; 
+
+       consolo.log(message) ; 
+       */
+        // ---------------- burada try() ve catch() kullanıldı mantık basit try ile yazılı olan hatalı kod catch ile yakalandı
+        /* 
+       try{
+           adddlert("welcome guset!")
+       }
+       catch(err){
+           document.getElementById("demo").innerHTML = err.message
+       }
+       */
+
+       // hata kodu vermek için err() kodları 
+/*
+       function myFunction(){
+           var message, x;
+           message = document.getElementById("first") ; 
+           message.innerHTML = "" ; 
+           x = document.getElementById("demo").value;
+
+           try{
+               if( x == "" ) throw "empty";
+               if(isNaN(x)) throw "not a number";
+               x = Number(x) ; 
+               if( x < 5) throw "too low" ; 
+               if( x > 10) throw "too high";
+           }
+           catch(err) {
+               message.innerHTML = "Input is " + err ; 
+           }
+       }
+       */ 
+       /*  
+        var carName = "Volvo" ; 
+         myfunction1() ; 
+
+        function myfunction1(){
+            document.getElementById("demo").innerHTML = "I can display globalScobe " + carName ;
+        }
+        // javascriptte objelerde fonksiyonlar değişkendir
+        */
+        /*
+        var person = {
+            firstName : "faruk" , 
+            lastName : "türkoğlu" , 
+            age : "25" ,
+            id : 1234,
+            fullName : function(){
+                return this.firstName + " " + this.lastName + this.age;
+            }
+        }
+        document.getElementById("demo").innerHTML = person.fullName() ;
+        */
+        /*
+        ----------global this. örnek
+        var x = this;
+        document.getElementById("demo").innerHTML = x ;
+        */
+        /*
+        document.getElementById("demo").innerHTML = benFunction();
+        function benFunction() {
+            return this ; 
+        }
+        */
+
+
+
+   </script> 
+</body>
+</html>

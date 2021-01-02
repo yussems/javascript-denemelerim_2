@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorBtn {
+  padding: 0.25rem 0.5rem;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.colorBtn:hover {
+  background: #fff;
+  color: black;
+  box-shadow: none;
+}
